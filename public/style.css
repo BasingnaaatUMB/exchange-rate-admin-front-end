@@ -1,0 +1,296 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('background.jpg');
+    color: black
+}
+
+.app-title{
+    font-weight: 500;
+    color: rgb(252, 180, 38);
+}
+
+.container_cust{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    padding-top: 3.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.tables{
+    display: flex;
+}
+
+.container_cust h1{
+    width: 70%;
+    border-bottom: 0.125rem solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+
+.content_cust{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(36, 35, 35);
+    margin-top: 0.313rem;
+    padding-bottom: 1.25rem;
+    max-width: 37.5rem;
+    height: 43.75rem;
+}
+
+.content_cust .table{
+    padding: 0 0.625rem;
+    max-width: 28.125rem;
+    align-items: center;
+    margin: 0.625rem 1.25rem;
+    border: 0.063rem solid rgb(255, 255, 255);
+    border-radius: 0.313rem;
+    overflow: hidden;
+}
+
+.content_cust .tables{
+    margin: auto;
+    width: 100%;
+}
+
+.content_cust .table h2{
+    border-bottom: 0.125rem solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+
+.content_cust .table table{
+    table-layout: fixed;
+    max-width: 34.375rem;
+    border-collapse: collapse;
+    
+    margin: auto;
+}
+
+.content_cust .table table img{
+    max-width: 1.563rem;
+}
+
+.content_cust .table table tr{
+    border-bottom: 0.063rem solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+
+.container_cust .table table th{
+    padding: 5px;
+}
+
+.container_cust .table table th img{
+    margin: 0 5px;
+}
+
+.video{
+    overflow: hidden;
+    max-width: 600px;
+}
+
+@media (orientation: landscape) {
+    .video {
+        padding-top: 120px;
+    }
+}
+
+@media (orientation: portrait) {
+    .video {
+        height: 50%;
+    }
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.alert-container {
+    top: 2rem;
+    left: 0;
+    right: 0;
+    margin: 10px 0;
+}
+
+.alert-inner {
+    display: inline-block;
+    padding: 8px 16px;
+    z-index: 1;
+    background-color: #ffffff;
+    color: black;
+}
+
+.error-container{
+    top: 2rem;
+    left: 0;
+    right: 0;
+    margin: 10px 0;
+}
+
+.error-inner{
+    display: inline-block;
+    padding: 8px 16px;
+    z-index: 1;
+    background-color: #ffb0b0;
+    color: red;
+    border-color: red;
+}
+
+.card-view{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.imageForm{
+    margin-top: 65px;
+}
+
+.imageForm form{
+    justify-content: center;
+    text-align: center;
+}
+
+.imageForm form label{
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+    background-color: rgba(36, 35, 35, 0.8);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.imageForm form input{
+    margin: auto;
+    max-width: 600px;
+}
+
+.imageForm button{
+    width: 250px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.cards .card{
+    padding: 0;
+    margin: 20px;
+    max-width: 20rem;
+    height: 350px;
+}
+
+.dropdown{
+    display: block;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.labeldiv{
+    margin-bottom: 15px;
+}
+
+.registerSection{
+    width: 100%;
+    max-width: 420px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.4);
+    margin-top: 80px;
+    color: white;
+}
+
+.registerForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="password"],
+button,
+textarea {
+    font-size: 22px;
+    padding: 0.25rem;
+    border-radius: 0.5 rem;
+}
+
+label,
+button {
+    margin-top: 1rem;
+}
+
+button {
+    padding: 0.5rem;
+}
+
+.instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: #000;
+    color: #fff;
+    padding: 0.25rem;
+    position: relative;
+    bottom: -10px;
+}
+
+.instructions > svg {
+    margin-right: 0.25rem;
+}
+
+.offscreen{
+    position: absolute;
+    left: -9999px;
+}
+
+.hide{
+    display: none;
+}
+
+.valid{
+    color: limegreen;
+    margin-left: 0.25rem;
+}
+
+.invalid {
+    color: red;
+    margin-left: 0.25rem;
+}
+
+.errmsg{
+    background-color: lightpink;
+    color: firebrick;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.line {
+    display: inline-block;
+}
+
+.logoutButton{
+    height: 25px;
+    width: 70px;
+    padding: 0;
+    font-size: 15px;
+    margin: auto;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+}
